@@ -18,5 +18,7 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/ps5_games/', include('ps5_games.urls'))
+    path('api/v1/ps5_games/', include('ps5_games.urls')),
+    path("api-auth/", include("rest_framework.urls")),
+    
 ]
